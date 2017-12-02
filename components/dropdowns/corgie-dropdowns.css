@@ -1,0 +1,26 @@
+:root {
+    --dropdown-color: mediumseagreen;
+    --dropdown-text-color: white;
+}
+
+.dropdown {
+    background-color: var(--dropdown-color);
+}
+
+.dropdown .dropdown_contents {
+    display: none;
+}
+
+.dropdown:hover .dropdown_contents {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    padding: .8rem .5rem .5rem .5rem;
+    background-color: var(--dropdown-color);
+}
+
+.dropdown:hover .dropdown_contents * {
+    padding: .2rem 0;
+    color: var(--dropdown-text-color);
+}

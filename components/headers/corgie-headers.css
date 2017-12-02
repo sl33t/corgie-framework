@@ -1,0 +1,23 @@
+:root {
+    --header-color: mediumseagreen;
+    --header-text-color: white;
+}
+
+.page_header {
+    background: var(--header-color);
+    color: var(--header-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
+.header_button {
+    padding: .5rem;
+    margin-right: .2rem;
+}
+
+.page_nav {
+    display: flex;
+    justify-content: space-between;
+}

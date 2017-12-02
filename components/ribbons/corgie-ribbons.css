@@ -1,0 +1,48 @@
+:root {
+    --ribbon-text-color: white;
+    --ribbon-color: mediumseagreen;
+    --ribbon-height: 5rem;
+}
+
+.ribbon {
+    padding: 1rem 0;
+    display: flex;
+}
+
+.ribbon .ribbon-content {
+    position: relative;
+    width: 100%;
+    color: var(--ribbon-text-color);
+    font-weight: bold;
+    font-size: calc(var(--ribbon-height) / 3);
+    background-color: var(--ribbon-color);
+    padding: .5rem;
+    height: var(--ribbon-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.ribbon:before, .ribbon:after {
+    content: "";
+    width: var(--ribbon-height);
+    margin-top: calc(var(--ribbon-height) * .3);
+    border-top: calc(var(--ribbon-height) / 2) solid var(--ribbon-color);
+    border-bottom: calc(var(--ribbon-height) / 2) solid var(--ribbon-color);
+    filter: brightness(85%);
+    z-index: -1;
+}
+
+.ribbon:before {
+    z-index: -1;
+    margin-right: calc(var(--ribbon-height) * -.3);
+    border-left: calc(var(--ribbon-height) * .3) solid transparent;
+    border-right: calc(var(--ribbon-height) * .3) solid rgba(0, 0, 0, .8);
+}
+
+.ribbon:after {
+    margin-left: calc(var(--ribbon-height) * -.3);
+    border-right: calc(var(--ribbon-height) * .3) solid transparent;
+    border-left: calc(var(--ribbon-height) * .3) solid rgba(0, 0, 0, .8);
+}

@@ -1,0 +1,60 @@
+:root {
+    --modal-color: white;
+    --modal-border-color: rgba(0, 0, 0, .9);
+    --modal-header-color: mediumseagreen;
+    --modal-header-font-color: white;
+}
+
+.modal_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 98;
+}
+
+.modal {
+    width: 90%;
+    max-width: 30rem;
+    min-height: 15rem;
+    max-height: 30rem;
+    background-color: var(--modal-color);
+    border-radius: 1rem;
+    border: .15rem solid var(--modal-border-color);
+    z-index: 99;
+}
+
+.modal header {
+    height: 3rem;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--modal-header-color);
+    border-radius: .7rem .7rem 0 0;
+    border-bottom: .1rem solid rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.modal header * {
+    color: var(--modal-header-font-color)
+}
+
+.modal_contents {
+    padding: .5rem;
+}
+
+.modal button, .modal .button {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: .5rem 0;
+}

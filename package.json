@@ -1,0 +1,26 @@
+{
+  "name": "corgie-css-framework",
+  "version": "1.0.0",
+  "description": "Modern CSS3 Framework for class use",
+  "main": "corgie-docs.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sl33t/corgie-framework.git"
+  },
+  "author": "Ricky Catron",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sl33t/corgie-framework/issues"
+  },
+  "homepage": "https://github.com/sl33t/corgie-framework#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "import-glob-loader": "^1.1.0",
+    "merge-files-webpack-plugin": "^1.1.2",
+    "webpack": "^3.9.1"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Component Docs</title>
+    <link rel="stylesheet" type="text/css" href="../dist/corgie-bundle.css">
+    <style>
+        :root {
+            --header-color: mediumseagreen;
+            --header-text-color: white;
+        }
+        header {
+            font-size: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="page_header">
+        <h1>Corgie CSS Framework</h1>
+        <nav class="page_nav">
+            <div class="dropdown" style="--dropdown-color: var(--header-color); --dropdown-text-color: var(--header-text-color);">
+                <p class="dropdown_menu header_button">
+                    Modules
+                </p>
+                <div class="dropdown_contents">
+                    <a href="ribbon-docs.html">Ribbons</a>
+                    <a href="modal-docs.html">Modals</a>
+                </div>
+            </div>
+            <p class="header_button">Test</p>
+        </nav>
+    </header>
+    <script src="../dist/corgie-bundle.js"></script>
+</body>
+</html>
