@@ -24,13 +24,37 @@
                     Modules
                 </p>
                 <div class="dropdown_contents">
-                    <a href="ribbon-docs.html">Ribbons</a>
-                    <a href="modal-docs.html">Modals</a>
+                    <a href="#ribbons">Ribbons</a>
+                    <a href="#modals">Modals</a>
                 </div>
             </div>
             <p class="header_button">Test</p>
         </nav>
     </header>
+    <main>
+        <section id="modals">
+            <h3>Modals</h3>
+            <a href="#" onclick="open_modal('1')">Open</a>
+
+            <div class="modal_container" id="1">
+                <div class="modal">
+                    <header>
+                        <h2>Test</h2>
+                        <a href="#" onclick="close_modal('1')">X</a>
+                    </header>
+                    <div class="modal_contents">
+                        <p>Test</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ribbons">
+            <h3>Ribbons</h3>
+            <div class="ribbon">
+                <p class="ribbon-content">Test</p>
+            </div>
+        </section>
+    </main>
     <script src="../dist/corgie-bundle.js"></script>
 </body>
 </html>

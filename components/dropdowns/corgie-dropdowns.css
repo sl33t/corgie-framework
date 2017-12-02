@@ -23,4 +23,5 @@
 .dropdown:hover .dropdown_contents * {
     padding: .2rem 0;
     color: var(--dropdown-text-color);
+    font-weight: normal;
 }
