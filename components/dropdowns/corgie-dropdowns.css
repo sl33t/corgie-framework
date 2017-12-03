@@ -5,22 +5,20 @@
 
 .dropdown {
     background-color: var(--dropdown-color);
+    cursor: pointer;
 }
 
 .dropdown .dropdown_contents {
     display: none;
-}
-
-.dropdown:hover .dropdown_contents {
-    display: flex;
     justify-content: space-between;
     flex-direction: column;
     position: absolute;
     padding: .8rem .5rem .5rem .5rem;
     background-color: var(--dropdown-color);
+    z-index: 4;
 }
 
-.dropdown:hover .dropdown_contents * {
+.dropdown .dropdown_contents * {
     padding: .2rem 0;
     color: var(--dropdown-text-color);
     font-weight: normal;
